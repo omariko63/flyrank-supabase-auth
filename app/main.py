@@ -1,10 +1,13 @@
 from fastapi import FastAPI
 from app.routes.auth import router as auth_router
 from app.core.supabase import supabase
+from app.routes.public import router as public_router
+from app.routes.protected import router as protected_router
 
 app = FastAPI(title="FlyRank Supabase Auth")
 app.include_router(auth_router, prefix="/auth")
-
+app.include_router(public_router, prefix="/public")
+app.include_router(protected_router, prefix="/protected")
 
 @app.get("/")
 def root():
