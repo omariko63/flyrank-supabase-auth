@@ -5,3 +5,4 @@ env/
 *.db
 *.db-journal
 *.env
+notes.md

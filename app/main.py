@@ -7,7 +7,6 @@ from app.routes.protected import router as protected_router
 from app.routes.quiz import router as quiz_router
 from app.exceptions.handlers import validation_exception_handler
 
-
 app = FastAPI(title="FlyRank Supabase Auth")
 app.include_router(auth_router, prefix="/auth")
 app.include_router(public_router, prefix="/public")

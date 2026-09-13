@@ -100,3 +100,5 @@ curl http://127.0.0.1:8000/protected/profile \
 Protected operations display a lock icon and use the HTTP Bearer security scheme. The screenshot below reflects the available routes.
 
 ![Swagger UI showing the FlyRank Supabase Auth API routes](docs/swagger-ui.png)
+
+
